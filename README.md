@@ -1,9 +1,9 @@
-# burger
+# Burger with 
 ### Deployed version: https://arcane-reef-49477.herokuapp.com/
-### GitHub Repository:  https://github.com/petra21a/FriendFinder
+### GitHub Repository:  https://github.com/petra21a/burger
 
 ## Assignment Challenge
-In this activity, we built a compatibility-based "FriendFinder" application -- basically a dating app structure. This full-stack site will take in results from your users' surveys, then compare their answers with those from other users. The app will then display the name and picture of the user with the best overall match. This is the first 'full-stack' application challenge.
+In this assignment, we create a burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!) following MVC design pattern; use Node and MySQL to query and route data in your app, and Handlebars to generate your HTML.
 
 ## Technical Approach
-- The challenge of this assignment was integration. Returning to the 'front-end' after a few weeks while also practicing modularization and the a basic MVC sturcture. Surprisingly, or not surprisingly, the most frustrating portion was dealing with modals in Materialize again.
+- The challenge of this assignment was integration: using Node and MySQL to query and route data in your app, and Handlebars to generate the HTML. I attempted challenge myself by bringing back part of the GIPHY API using ajax from a previous assigned challenge and digging further into environmental variable.
