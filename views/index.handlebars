@@ -1,3 +1,59 @@
-<h1>Eat-Da-Burger</h1>
-
 {{!-- When the button is clicked used ajax to call a giphy of 'eat a burger' --}}
+<div class="row">
+    <div class="col m6 s12 center-align flow-text red-text text-accent-4">
+        <h1>Eat-da-Burger!</h1>
+
+    </div>
+    <div class="col m6 s12 flow-text">
+        <form class="create-form">
+
+            <div class="form-group">
+                <label for="burger-create" data-error="Please enter a valid name">Enter a burger you would like to eat!</label>
+                <input type="text" class="validate" pattern="[A-Za-z].*" required id="burger-create" name="name">
+
+            </div>
+    <button class="btn waves-effect red accent-4 waves-light" type="submit" name="action">Place Order
+    <i class="material-icons right">send</i>
+  </button>
+        </form>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col m6 s12">
+
+        <h2>Order Up!</h2>
+        <ul>
+            {{#each burgers}} {{#unless devoured}}
+            <h4>{{burger_name}}
+                <button class="btn-small burger-devour waves-effect  orange lighten-2 waves-red" data-id="{{id}}"> Devour!
+                    <i class="material-icons right">restaurant</i>
+                </button>
+            </h4>
+            {{/unless}} {{else}}
+            <p class="empty">Your plate is empty!</p>
+            {{/each}}
+
+        </ul>
+
+    </div>
+    <div id="giphy-modal" class="modal center-align">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Yumm! Next Burger!</a>
+        <div id="burger-giphy" class="modal-content">
+        </div>
+    </div>
+    <div class="col m6 s12">
+        <ul>
+            {{#each burgers}} {{#if devoured}}
+            <h4 class="orange-text text-lighten-2>{{burger_name}} - Devoured!</h4>
+
+            {{/if}} {{else}}
+            <p class="empty">Your plate is empty!</p>
+
+            {{/each}}
+
+        </ul>
+
+    </div>
+</div>
